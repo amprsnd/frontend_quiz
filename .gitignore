@@ -1,0 +1,21 @@
+.DS_Store
+quiz-vue/node_modules
+quiz-vue/dist
+
+# local env files
+quiz-vue/.env.local
+quiz-vue/.env.*.local
+
+# Log files
+quiz-vue/npm-debug.log*
+quiz-vue/yarn-debug.log*
+quiz-vue/yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
