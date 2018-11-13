@@ -9,7 +9,7 @@ export default{
   },
   css: [
     {
-      code: '<pre class="prettyprint linenums lang-css">ul {\n    MaRGin: 10px;\n}\n</pre>',
+      code: '<pre class="prettyprint linenums language-css">ul {\n    MaRGin: 10px;\n}\n</pre>',
       question: 'Are CSS property names case-sensitive?',
       answers: [
         {
@@ -107,7 +107,7 @@ export default{
       ]
     },
     {
-      code: '<pre class="prettyprint linenums lang-html">&lt;ul class="shopping-list" id="awesome"&gt;\n    &lt;li&gt;&lt;span&gt;Milk&lt;/span&gt;&lt;/li&gt;\n    &lt;li class="favorite" id="must-buy"&gt;&lt;span class="highlight"&gt;Sausage&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n</pre><pre class="prettyprint linenums lang-css">ul {\n    color: red;\n}\nli {\n    color: blue;\n}\n</pre>',
+      code: '<pre class="prettyprint linenums language-html">&lt;ul class="shopping-list" id="awesome"&gt;\n    &lt;li&gt;&lt;span&gt;Milk&lt;/span&gt;&lt;/li&gt;\n    &lt;li class="favorite" id="must-buy"&gt;&lt;span class="highlight"&gt;Sausage&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n</pre><pre class="prettyprint linenums language-css">ul {\n    color: red;\n}\nli {\n    color: blue;\n}\n</pre>',
       question: 'What is the color of the text Sausage ?',
       answers: [
         {
@@ -125,7 +125,7 @@ export default{
       ]
     },
     {
-      code: '<pre class="prettyprint linenums lang-html">&lt;ul class="shopping-list" id="awesome"&gt;\n    &lt;li&gt;&lt;span&gt;Milk&lt;/span&gt;&lt;/li&gt;\n    &lt;li class="favorite" id="must-buy"&gt;&lt;span class="highlight"&gt;Sausage&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n</pre><pre class="prettyprint linenums lang-css">ul li {\n    color: red;\n}\n#must-buy {\n    color: blue;\n}\n</pre>',
+      code: '<pre class="prettyprint linenums language-html">&lt;ul class="shopping-list" id="awesome"&gt;\n    &lt;li&gt;&lt;span&gt;Milk&lt;/span&gt;&lt;/li&gt;\n    &lt;li class="favorite" id="must-buy"&gt;&lt;span class="highlight"&gt;Sausage&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n</pre><pre class="prettyprint linenums language-css">ul li {\n    color: red;\n}\n#must-buy {\n    color: blue;\n}\n</pre>',
       question: 'What is the color of the text Sausage ?',
       answers: [
         {
@@ -143,7 +143,7 @@ export default{
       ]
     },
     {
-      code: '<pre class="prettyprint linenums lang-html">&lt;ul class="shopping-list" id="awesome"&gt;\n    &lt;li&gt;&lt;span&gt;Milk&lt;/span&gt;&lt;/li&gt;\n    &lt;li class="favorite" id="must-buy"&gt;&lt;span class="highlight"&gt;Sausage&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n</pre><pre class="prettyprint lang-css">.shopping-list .favorite {\n    color: red;\n}\n#must-buy {\n    color: blue;\n}\n</pre>',
+      code: '<pre class="prettyprint linenums language-html">&lt;ul class="shopping-list" id="awesome"&gt;\n    &lt;li&gt;&lt;span&gt;Milk&lt;/span&gt;&lt;/li&gt;\n    &lt;li class="favorite" id="must-buy"&gt;&lt;span class="highlight"&gt;Sausage&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n</pre><pre class="prettyprint language-css">.shopping-list .favorite {\n    color: red;\n}\n#must-buy {\n    color: blue;\n}\n</pre>',
       question: '',
       answers: [
         {
@@ -161,7 +161,7 @@ export default{
       ]
     },
     {
-      code: '<pre class="prettyprint linenums lang-html">&lt;ul class="shopping-list" id="awesome"&gt;\n    &lt;li&gt;&lt;span&gt;Milk&lt;/span&gt;&lt;/li&gt;\n    &lt;li class="favorite" id="must-buy"&gt;&lt;span class="highlight"&gt;Sausage&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n</pre><pre class="prettyprint lang-css">ul#awesome {\n    color: red;\n}\nul.shopping-list li.favorite span {\n    color: blue;\n}\n</pre>',
+      code: '<pre class="prettyprint linenums language-html">&lt;ul class="shopping-list" id="awesome"&gt;\n    &lt;li&gt;&lt;span&gt;Milk&lt;/span&gt;&lt;/li&gt;\n    &lt;li class="favorite" id="must-buy"&gt;&lt;span class="highlight"&gt;Sausage&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n</pre><pre class="prettyprint language-css">ul#awesome {\n    color: red;\n}\nul.shopping-list li.favorite span {\n    color: blue;\n}\n</pre>',
       question: '',
       answers: [
         {
@@ -179,7 +179,7 @@ export default{
       ]
     },
     {
-      code: '<pre class="prettyprint linenums lang-html">&lt;ul class="shopping-list" id="awesome"&gt;\n    &lt;li&gt;&lt;span&gt;Milk&lt;/span&gt;&lt;/li&gt;\n    &lt;li class="favorite" id="must-buy"&gt;&lt;span class="highlight"&gt;Sausage&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n</pre><pre class="prettyprint lang-css">ul#awesome #must-buy {\n    color: red;\n}\n.favorite span {\n    color: blue!important;\n}\n</pre>',
+      code: '<pre class="prettyprint linenums language-html">&lt;ul class="shopping-list" id="awesome"&gt;\n    &lt;li&gt;&lt;span&gt;Milk&lt;/span&gt;&lt;/li&gt;\n    &lt;li class="favorite" id="must-buy"&gt;&lt;span class="highlight"&gt;Sausage&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n</pre><pre class="prettyprint language-css">ul#awesome #must-buy {\n    color: red;\n}\n.favorite span {\n    color: blue!important;\n}\n</pre>',
       question: '',
       answers: [
         {
@@ -197,7 +197,7 @@ export default{
       ]
     },
     {
-      code: '<pre class="prettyprint linenums lang-html">&lt;ul class="shopping-list" id="awesome"&gt;\n    &lt;li&gt;&lt;span&gt;Milk&lt;/span&gt;&lt;/li&gt;\n    &lt;li class="favorite" id="must-buy"&gt;&lt;span class="highlight"&gt;Sausage&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n</pre><pre class="prettyprint lang-css">ul.shopping-list li .highlight {\n    color: red;\n}\nul.shopping-list li .highlight:nth-of-type(odd) {\n    color: blue;\n}\n</pre>',
+      code: '<pre class="prettyprint linenums language-html">&lt;ul class="shopping-list" id="awesome"&gt;\n    &lt;li&gt;&lt;span&gt;Milk&lt;/span&gt;&lt;/li&gt;\n    &lt;li class="favorite" id="must-buy"&gt;&lt;span class="highlight"&gt;Sausage&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n</pre><pre class="prettyprint language-css">ul.shopping-list li .highlight {\n    color: red;\n}\nul.shopping-list li .highlight:nth-of-type(odd) {\n    color: blue;\n}\n</pre>',
       question: '',
       answers: [
         {
@@ -215,7 +215,7 @@ export default{
       ]
     },
     {
-      code: '<pre class="prettyprint linenums lang-html">&lt;ul class="shopping-list" id="awesome"&gt;\n    &lt;li&gt;&lt;span&gt;Milk&lt;/span&gt;&lt;/li&gt;\n    &lt;li class="favorite" id="must-buy"&gt;&lt;span class="highlight"&gt;Sausage&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n</pre><pre class="prettyprint lang-css">#awesome .favorite:not(#awesome) .highlight {\n    color: red;\n}\n#awesome .highlight:nth-of-type(1):nth-last-of-type(1) {\n    color: blue;\n}\n</pre>',
+      code: '<pre class="prettyprint linenums language-html">&lt;ul class="shopping-list" id="awesome"&gt;\n    &lt;li&gt;&lt;span&gt;Milk&lt;/span&gt;&lt;/li&gt;\n    &lt;li class="favorite" id="must-buy"&gt;&lt;span class="highlight"&gt;Sausage&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n</pre><pre class="prettyprint language-css">#awesome .favorite:not(#awesome) .highlight {\n    color: red;\n}\n#awesome .highlight:nth-of-type(1):nth-last-of-type(1) {\n    color: blue;\n}\n</pre>',
       question: '',
       answers: [
         {
@@ -233,7 +233,7 @@ export default{
       ]
     },
     {
-      code: '<pre class="prettyprint lang-html">&lt;p id="example"&gt;Hello&lt;/p&gt;\n</pre><pre class="prettyprint lang-css">#example {\n    margin-bottom: -5px;\n}\n</pre>',
+      code: '<pre class="prettyprint language-html">&lt;p id="example"&gt;Hello&lt;/p&gt;\n</pre><pre class="prettyprint language-css">#example {\n    margin-bottom: -5px;\n}\n</pre>',
       question: '',
       answers: [
         {
@@ -251,7 +251,7 @@ export default{
       ]
     },
     {
-      code: '<pre class="prettyprint lang-html">&lt;p id="example"&gt;Hello&lt;/p&gt;\n</pre><pre class="prettyprint lang-css">#example {\n    margin-left: -5px;\n}\n</pre>',
+      code: '<pre class="prettyprint language-html">&lt;p id="example"&gt;Hello&lt;/p&gt;\n</pre><pre class="prettyprint language-css">#example {\n    margin-left: -5px;\n}\n</pre>',
       question: '',
       answers: [
         {
@@ -269,7 +269,7 @@ export default{
       ]
     },
     {
-      code: '<pre class="prettyprint linenums lang-html">&lt;div id="test1"&gt;\n    &lt;span id="test2"&gt;&lt;/span&gt;\n&lt;/div&gt;\n</pre><pre class="prettyprint lang-css">#i-am-useless {\n    background-image: url(\'mypic.jpg\');\n}\n</pre>',
+      code: '<pre class="prettyprint linenums language-html">&lt;div id="test1"&gt;\n    &lt;span id="test2"&gt;&lt;/span&gt;\n&lt;/div&gt;\n</pre><pre class="prettyprint language-css">#i-am-useless {\n    background-image: url(\'mypic.jpg\');\n}\n</pre>',
       question: '',
       answers: [
         {
@@ -287,7 +287,7 @@ export default{
       ]
     },
     {
-      code: '<pre class="prettyprint linenums lang-html">&lt;div id="test1"&gt;\n    &lt;span id="test2"&gt;&lt;/span&gt;\n&lt;/div&gt;\n</pre><pre class="prettyprint lang-css">#test2 {\n    background-image: url(\'mypic.jpg\');\n    display: none;\n}\n</pre>',
+      code: '<pre class="prettyprint linenums language-html">&lt;div id="test1"&gt;\n    &lt;span id="test2"&gt;&lt;/span&gt;\n&lt;/div&gt;\n</pre><pre class="prettyprint language-css">#test2 {\n    background-image: url(\'mypic.jpg\');\n    display: none;\n}\n</pre>',
       question: '',
       answers: [
         {
@@ -301,7 +301,7 @@ export default{
       ]
     },
     {
-      code: '<pre class="prettyprint linenums lang-html">&lt;div id="test1"&gt;\n    &lt;span id="test2"&gt;&lt;/span&gt;\n&lt;/div&gt;\n</pre><pre class="prettyprint lang-css">#test1 {\n    display: none;\n}\n#test2 {\n    background-image: url(\'mypic.jpg\');\n    visibility: hidden;\n}\n</pre>',
+      code: '<pre class="prettyprint linenums language-html">&lt;div id="test1"&gt;\n    &lt;span id="test2"&gt;&lt;/span&gt;\n&lt;/div&gt;\n</pre><pre class="prettyprint language-css">#test1 {\n    display: none;\n}\n#test2 {\n    background-image: url(\'mypic.jpg\');\n    visibility: hidden;\n}\n</pre>',
       question: '',
       answers: [
         {
@@ -315,7 +315,7 @@ export default{
       ]
     },
     {
-      code: '<pre class="prettyprint lang-css">@media only screen and (max-width: 1024px) {\n    margin: 0;\n}\n</pre>',
+      code: '<pre class="prettyprint language-css">@media only screen and (max-width: 1024px) {\n    margin: 0;\n}\n</pre>',
       question: '',
       answers: [
         {
@@ -333,7 +333,7 @@ export default{
       ]
     },
     {
-      code: '<pre class="prettyprint linenums lang-html">&lt;div&gt;\n    &lt;p&gt;I am floated&lt;/p&gt;\n    &lt;p&gt;So am I&lt;/p&gt;\n&lt;/div&gt;\n</pre><pre class="prettyprint lang-css">div {\n    overflow: hidden;\n}\np {\n    float: left;\n}\n</pre>',
+      code: '<pre class="prettyprint linenums language-html">&lt;div&gt;\n    &lt;p&gt;I am floated&lt;/p&gt;\n    &lt;p&gt;So am I&lt;/p&gt;\n&lt;/div&gt;\n</pre><pre class="prettyprint language-css">div {\n    overflow: hidden;\n}\np {\n    float: left;\n}\n</pre>',
       question: '',
       answers: [
         {
@@ -347,7 +347,7 @@ export default{
       ]
     },
     {
-      code: '<pre class="prettyprint lang-css">@media only screen and (max-width: 1024px) {\n    margin: 0;\n}\n</pre>',
+      code: '<pre class="prettyprint language-css">@media only screen and (max-width: 1024px) {\n    margin: 0;\n}\n</pre>',
       question: '',
       answers: [
         {
@@ -391,7 +391,7 @@ export default{
       ]
     },
     {
-      code: '<pre class="prettyprint linenums lang-html">&lt;figure&gt;\n\t&lt;img src="myimage.jpg" alt="My image"&gt;\n\t&lt;figcaption&gt;\n\t\t&lt;p&gt;This is my self portrait.&lt;/p&gt;\n\t&lt;/figcaption&gt;\n&lt;/figure&gt;\n</pre>',
+      code: '<pre class="prettyprint linenums language-html">&lt;figure&gt;\n\t&lt;img src="myimage.jpg" alt="My image"&gt;\n\t&lt;figcaption&gt;\n\t\t&lt;p&gt;This is my self portrait.&lt;/p&gt;\n\t&lt;/figcaption&gt;\n&lt;/figure&gt;\n</pre>',
       question: 'Is the above HTML valid?',
       answers: [
         {
@@ -459,7 +459,7 @@ export default{
       ]
     },
     {
-      code: '<pre class="prettyprint linenums lang-html">&lt;article&gt;\n    &lt;h1&gt;Hello World&lt;/h1&gt;\n    &lt;style scoped&gt;\n        p {\n            color: #FF0;\n        }\n    &lt;/style&gt;\n    &lt;p&gt;This is my text&lt;/p&gt;\n&lt;/article&gt;\n\n&lt;article&gt;\n    &lt;h1&gt;This is awesome&lt;/h1&gt;\n    &lt;p&gt;I am some other text&lt;/p&gt;\n&lt;/article&gt;\n</pre>',
+      code: '<pre class="prettyprint linenums language-html">&lt;article&gt;\n    &lt;h1&gt;Hello World&lt;/h1&gt;\n    &lt;style scoped&gt;\n        p {\n            color: #FF0;\n        }\n    &lt;/style&gt;\n    &lt;p&gt;This is my text&lt;/p&gt;\n&lt;/article&gt;\n\n&lt;article&gt;\n    &lt;h1&gt;This is awesome&lt;/h1&gt;\n    &lt;p&gt;I am some other text&lt;/p&gt;\n&lt;/article&gt;\n</pre>',
       question: 'What does the <code>scoped</code> attribute do?',
       answers: [
         {
@@ -481,7 +481,7 @@ export default{
       ]
     },
     {
-      code: '<pre class="prettyprint linenums lang-html">&lt;article&gt;\n    &lt;a href="#"&gt;\n        &lt;h1&gt;Hello&lt;/h1&gt;\n        &lt;p&gt;I am some text&lt;/p&gt;\n    &lt;/a&gt;\n&lt;/article&gt;\n</pre>',
+      code: '<pre class="prettyprint linenums language-html">&lt;article&gt;\n    &lt;a href="#"&gt;\n        &lt;h1&gt;Hello&lt;/h1&gt;\n        &lt;p&gt;I am some text&lt;/p&gt;\n    &lt;/a&gt;\n&lt;/article&gt;\n</pre>',
       question: 'Does HTML5 support block-level links?',
       answers: [
         {
@@ -495,7 +495,7 @@ export default{
       ]
     },
     {
-      code: '<pre class="prettyprint lang-html">&lt;img src="mypic.jpg" style="visibility: hidden" alt="My picture"&gt;\n</pre>',
+      code: '<pre class="prettyprint language-html">&lt;img src="mypic.jpg" style="visibility: hidden" alt="My picture"&gt;\n</pre>',
       question: 'Does the HTML above trigger a http request when the page first loads ?',
       answers: [
         {
@@ -509,7 +509,7 @@ export default{
       ]
     },
     {
-      code: '<pre class="prettyprint linenums lang-html">&lt;div style="display: none;"&gt;\n    &lt;img src="mypic.jpg" alt="My photo"&gt;\n&lt;/div&gt;\n</pre>',
+      code: '<pre class="prettyprint linenums language-html">&lt;div style="display: none;"&gt;\n    &lt;img src="mypic.jpg" alt="My photo"&gt;\n&lt;/div&gt;\n</pre>',
       question: 'Does the HTML above trigger a http request when the page first loads?',
       answers: [
         {
@@ -523,7 +523,7 @@ export default{
       ]
     },
     {
-      code: '<pre class="prettyprint linenums lang-html">&lt;head&gt;\n    &lt;link href="main1.css" rel="stylesheet"&gt;\n    &lt;script&gt;\n        alert(\'Hello World\');\n    &lt;/script&gt;\n&lt;/head&gt;\n</pre>',
+      code: '<pre class="prettyprint linenums language-html">&lt;head&gt;\n    &lt;link href="main1.css" rel="stylesheet"&gt;\n    &lt;script&gt;\n        alert(\'Hello World\');\n    &lt;/script&gt;\n&lt;/head&gt;\n</pre>',
       question: 'Does <code>main1.css</code> have to be downloaded and parsed before <code>Hello World</code> is alerted?',
       answers: [
         {
@@ -537,7 +537,7 @@ export default{
       ]
     },
     {
-      code: '<pre class="prettyprint linenums lang-html">&lt;head&gt;\n    &lt;link href="main1.css" rel="stylesheet"&gt;\n    &lt;link href="main2.css" rel="stylesheet"&gt;\n&lt;/head&gt;\n</pre>',
+      code: '<pre class="prettyprint linenums language-html">&lt;head&gt;\n    &lt;link href="main1.css" rel="stylesheet"&gt;\n    &lt;link href="main2.css" rel="stylesheet"&gt;\n&lt;/head&gt;\n</pre>',
       question: 'Does <code>main1.css</code> have to be downloaded and parsed before <code>main2.css</code> can be fetched?',
       answers: [
         {
@@ -551,7 +551,7 @@ export default{
       ]
     },
     {
-      code: '<pre class="prettyprint linenums lang-html">&lt;head&gt;\n    &lt;link href="main1.css" rel="stylesheet"&gt;\n&lt;/head&gt;\n&lt;body&gt;\n    &lt;p&gt;Paragraph 1&lt;/p&gt;\n    &lt;p&gt;Paragraph 2&lt;/p&gt;\n    &lt;link href="main2.css" rel="stylesheet"&gt;\n&lt;/body&gt;\n</pre>',
+      code: '<pre class="prettyprint linenums language-html">&lt;head&gt;\n    &lt;link href="main1.css" rel="stylesheet"&gt;\n&lt;/head&gt;\n&lt;body&gt;\n    &lt;p&gt;Paragraph 1&lt;/p&gt;\n    &lt;p&gt;Paragraph 2&lt;/p&gt;\n    &lt;link href="main2.css" rel="stylesheet"&gt;\n&lt;/body&gt;\n</pre>',
       question: 'Does <code>main2.css</code> have to be downloaded and parsed before <code>Paragraph 1</code> is rendered on the page?',
       answers: [
         {
@@ -567,7 +567,7 @@ export default{
   ],
   javascript: [
     {
-      code: '<pre class="prettyprint lang-js">"1" + 2 + "3" + 4;\n</pre>',
+      code: '<pre class="prettyprint language-js">"1" + 2 + "3" + 4;\n</pre>',
       question: '',
       answers: [
         {
@@ -585,7 +585,7 @@ export default{
       ]
     },
     {
-      code: '<pre class="prettyprint lang-js">4 + 3 + 2 + "1"\n</pre>',
+      code: '<pre class="prettyprint language-js">4 + 3 + 2 + "1"\n</pre>',
       question: '',
       answers: [
         {
@@ -603,7 +603,7 @@ export default{
       ]
     },
     {
-      code: '<pre class="prettyprint lang-js">var foo = 1;\nfunction bar() {\n\tfoo = 10;\n\treturn;\n\tfunction foo() {}\n}\nbar();\nalert(foo);\n</pre>',
+      code: '<pre class="prettyprint language-js">var foo = 1;\nfunction bar() {\n\tfoo = 10;\n\treturn;\n\tfunction foo() {}\n}\nbar();\nalert(foo);\n</pre>',
       question: '',
       answers: [
         {
@@ -629,7 +629,7 @@ export default{
       ]
     },
     {
-      code: '<pre class="prettyprint lang-js">function bar() {\n    return foo;\n    foo = 10;\n    function foo() {}\n    var foo = 11;\n}\nalert(typeof bar());\n</pre>',
+      code: '<pre class="prettyprint language-js">function bar() {\n    return foo;\n    foo = 10;\n    function foo() {}\n    var foo = 11;\n}\nalert(typeof bar());\n</pre>',
       question: '',
       answers: [
         {
@@ -651,7 +651,7 @@ export default{
       ]
     },
     {
-      code: '<pre class="prettyprint lang-js">var x = 3;\n\nvar foo = {\n    x: 2,\n    baz: {\n        x: 1,\n        bar: function() {\n            return this.x;\n        }\n    }\n}\n\nvar go = foo.baz.bar;\n\nalert(go());\nalert(foo.baz.bar());\n</pre>',
+      code: '<pre class="prettyprint language-js">var x = 3;\n\nvar foo = {\n    x: 2,\n    baz: {\n        x: 1,\n        bar: function() {\n            return this.x;\n        }\n    }\n}\n\nvar go = foo.baz.bar;\n\nalert(go());\nalert(foo.baz.bar());\n</pre>',
       question: '',
       answers: [
         {
@@ -681,7 +681,7 @@ export default{
       ]
     },
     {
-      code: '<pre class="prettyprint lang-js">var x   = 4,\n    obj = {\n        x: 3,\n        bar: function() {\n            var x = 2;\n            setTimeout(function() {\n                var x = 1;\n                alert(this.x);\n            }, 1000);\n        }\n    };\nobj.bar();\n</pre>',
+      code: '<pre class="prettyprint language-js">var x   = 4,\n    obj = {\n        x: 3,\n        bar: function() {\n            var x = 2;\n            setTimeout(function() {\n                var x = 1;\n                alert(this.x);\n            }, 1000);\n        }\n    };\nobj.bar();\n</pre>',
       question: '',
       answers: [
         {
@@ -707,7 +707,7 @@ export default{
       ]
     },
     {
-      code: '<pre class="prettyprint lang-js">x = 1;\nfunction bar() {\n    this.x = 2;\n    return x;\n}\nvar foo = new bar();\nalert(foo.x);\n</pre>',
+      code: '<pre class="prettyprint language-js">x = 1;\nfunction bar() {\n    this.x = 2;\n    return x;\n}\nvar foo = new bar();\nalert(foo.x);\n</pre>',
       question: '',
       answers: [
         {
@@ -725,7 +725,7 @@ export default{
       ]
     },
     {
-      code: '<pre class="prettyprint lang-js">function foo(a) {\n    alert(arguments.length);\n}\nfoo(1, 2, 3);\n</pre>',
+      code: '<pre class="prettyprint language-js">function foo(a) {\n    alert(arguments.length);\n}\nfoo(1, 2, 3);\n</pre>',
       question: '',
       answers: [
         {
@@ -747,7 +747,7 @@ export default{
       ]
     },
     {
-      code: '<pre class="prettyprint lang-js">var foo = function bar() {}; \nalert(typeof bar);\n</pre>',
+      code: '<pre class="prettyprint language-js">var foo = function bar() {}; \nalert(typeof bar);\n</pre>',
       question: '',
       answers: [
         {
@@ -765,7 +765,7 @@ export default{
       ]
     },
     {
-      code: '<pre class="prettyprint lang-js">var arr = [];\narr[0]  = \'a\';\narr[1]  = \'b\';\narr.foo = \'c\';\nalert(arr.length);\n</pre>',
+      code: '<pre class="prettyprint language-js">var arr = [];\narr[0]  = \'a\';\narr[1]  = \'b\';\narr.foo = \'c\';\nalert(arr.length);\n</pre>',
       question: '',
       answers: [
         {
@@ -787,7 +787,7 @@ export default{
       ]
     },
     {
-      code: '<pre class="prettyprint lang-js">function foo(a) {\n    arguments[0] = 2;\n    alert(a);\n}\nfoo(1);\n</pre>',
+      code: '<pre class="prettyprint language-js">function foo(a) {\n    arguments[0] = 2;\n    alert(a);\n}\nfoo(1);\n</pre>',
       question: '',
       answers: [
         {
@@ -805,7 +805,7 @@ export default{
       ]
     },
     {
-      code: '<pre class="prettyprint lang-js">function foo(){}\ndelete foo.length;\nalert(typeof foo.length);\n</pre>',
+      code: '<pre class="prettyprint language-js">function foo(){}\ndelete foo.length;\nalert(typeof foo.length);\n</pre>',
       question: '',
       answers: [
         {

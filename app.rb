@@ -20,6 +20,12 @@ class Parser < Sinatra::Base
       # each questions in skill area
       area.css('article').each_with_index do |q, i|
         if q['class'].nil? || q['class'] == 'no-code-sample'
+          
+          # fix className for code examples
+          q.css('.prettyprint').each do |pre|
+            pre['class'] = pre['class'].sub('lang', 'language')
+          end
+          
           # question text and code
           question = {
             code: q.css('.prettyprint'),

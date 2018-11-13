@@ -1,44 +1,45 @@
 <template>
-  <div id="app">
-    <welcome v-if="store.results.current < 0"></welcome>
+  <vue-scroll :ops="scroll" ref="vs" @handle-resize="scrollBottom">
+    <div id="app" class="md-layout md-alignment-center">
 
-    <div class="quiz">
+      <welcome v-if="store.results.current < 0"></welcome>
 
-      <counter v-if="store.results.current >= 0"></counter>
+      <div class="quiz md-layout-item md-medium-size-100 md-small-size-100 md-xsmall-size-100">
 
-      <h1 v-if="store.currentSection === 'css'">CSS:</h1>
-      <question
-        v-for="(q, i) in store.css"
-        :q-data="q"
-        q-counter="css"
-        :index="i"
-        :key="i"
-      ></question>
+        <counter v-if="store.results.current >= 0"></counter>
 
-      <h1 v-if="store.currentSection === 'html'">HTML:</h1>
-      <question
-        v-for="(q, i) in store.html"
-        :q-data='q'
-        q-counter="html"
-        :index="i + store.css.length"
-        :key="i + store.css.length"
-      ></question>
+        <question
+          v-for="(q, i) in store.css"
+          :q-data="q"
+          q-counter="css"
+          :index="i"
+          :key="i"
+        />
 
-      <h1 v-if="store.currentSection === 'js'">JavaScript:</h1>
-      <question
-        v-for="(q, i) in store.javascript"
-        :q-data='q'
-        q-counter="js"
-        :index="i + store.css.length + store.html.length"
-        :key="i + store.css.length + store.html.length"
-      ></question>
+        <question
+          v-for="(q, i) in store.html"
+          :q-data='q'
+          q-counter="html"
+          :index="i + store.css.length"
+          :key="i + store.css.length"
+        />
+
+        <question
+          v-for="(q, i) in store.javascript"
+          :q-data='q'
+          q-counter="js"
+          :index="i + store.css.length + store.html.length"
+          :key="i + store.css.length + store.html.length"
+        />
+      </div>
+
+      <complete
+        v-if="store.results.current === store.results.total"
+        :totals="[totalCss, totalHtml, totalJS]"
+      ></complete>
+      <div id="scrollHere"></div>
     </div>
-
-    <complete
-      v-if="store.results.current === store.results.total"
-      :totals="[totalCss, totalHtml, totalJS]"
-    ></complete>
-  </div>
+  </vue-scroll>
 </template>
 
 <script>
@@ -59,8 +60,24 @@ export default {
   },
   data: function () {
     return {
-      store: store
+      store: store,
+      scroll: {
+        rail: {
+          background: '#fff',
+          opacity: 0.2
+        },
+        bar: {
+          background: '#fff'
+        }
+      }
     }
+  },
+  mounted: function () {
+    let codeBlocks = document.querySelectorAll('pre')
+    codeBlocks.forEach(el => {
+      // eslint-disable-next-line
+      hljs.highlightBlock(el)
+    })
   },
   computed: {
     totalCss: function () {
@@ -79,9 +96,37 @@ export default {
   beforeMount: function () {
     this.store.results.total = this.totalQ
   },
-  methods: {}
+  methods: {
+    scrollBottom: function () {
+      this.$refs['vs'].scrollTo({
+        y: '100%'
+      })
+    }
+  }
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+  @import "~vue-material/dist/theme/engine";
+
+  body {
+    overflow: hidden;
+    min-height: 100vh;
+    height: 100%;
+  }
+
+  .md-layout {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;.show-card-enter-active {
+    animation: unfold 200ms ease-in-out;
+  }
+    box-sizing: border-box;
+    padding: 72px 2rem 2rem 2rem;
+  }
+
+  #scrollHere {
+    width: 100%;
+    clear: both;
+  }
 </style>
