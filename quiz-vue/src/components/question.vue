@@ -6,8 +6,8 @@
       </md-card-header>
 
       <md-card-content>
-        <code v-html="qData.code"></code>
         <div v-html="qData.question"></div>
+        <code v-html="qData.code"></code>
       </md-card-content>
 
       <md-card-actions v-if="store.results.current === index">

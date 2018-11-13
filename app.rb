@@ -29,7 +29,7 @@ class Parser < Sinatra::Base
           # question text and code
           question = {
             code: q.css('.prettyprint'),
-            question: q.css('.question').inner_html,
+            question: q.css('p'),
             answers: []
           }
           # each answers
